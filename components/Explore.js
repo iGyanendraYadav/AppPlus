@@ -39,7 +39,7 @@ export const dataOne = [
 const Explore = () => {
   return (
     <>
-      <div className="bg-gradient-to-b from-pink-600 to-fuchsia-700 ">
+      {/* <div className="bg-gradient-to-b from-pink-600 to-fuchsia-700 ">
         <div className="container mx-auto flex flex-col justify-center items-center text-white py-20">
           <span className="text-sm lg:text-lg uppercase font-bold pt-5 lg:pt-10">
             Explore The Future
@@ -70,7 +70,7 @@ const Explore = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-gradient-to-b from-fuchsia-700 to-blue-600 ">
         <div className="container mx-auto flex flex-col justify-center items-center  py-10">
@@ -78,6 +78,7 @@ const Explore = () => {
         </div>
 
         <div className="digonalBox text-white overflow-hidden bg-gradient-to-tr from-blue-600 via-fuchsia-500 to-blue-600 -skew-y-12">
+        <a className="anchor" id="about" />
           <div className="content p-10 lg:p-36 skew-y-12">
             <div className="flex flex-col lg:flex-row justify-center items-center ">
               <div className="flexOne w-auto lg:w-1/2">
@@ -110,7 +111,8 @@ const Explore = () => {
           </div>
         </div>
 
-        <div className="digonalBox2 text-white overflow-hidden bg-pink-700 -skew-y-12 pt-10 pb-10 lg:pt-20 lg:pb-16">
+        <div className="digonalBox2 text-white overflow-hidden bg-pink-700 -skew-y-12 pt-10 pb-10 lg:pt-40 lg:pb-16">
+        <a className="anchor" id="features" />
           <div className="content2 p-10 lg:p-16 skew-y-12">
             <div className="flexTwo w-auto lg:w-1/2 flex flex-col justify-start items-start space-y-3 lg:space-y-5">
               <span className="text-sm lg:text-lg font-bold">
@@ -139,7 +141,8 @@ const Explore = () => {
           </div>
         </div>
 
-        <div className="digonalBox3 text-white overflow-hidden bg-pink-700 -skew-y-12 py-10 lg:py-16">
+        <div className="digonalBox3 text-white overflow-hidden bg-pink-700 -skew-y-12 py-10 lg:py-24">
+        <a className="anchor" id="review" />
           <div className="content3 p-10 lg:p-16 skew-y-12">
             <div className="flexTwo w-auto lg:w-1/2 flex flex-col justify-start items-start space-y-3 lg:space-y-5">
               <span className="text-sm lg:text-lg font-bold">
@@ -182,13 +185,14 @@ const Explore = () => {
         {/* #Review */}
 
         <div className="bg-gradient-to-b from-pink-700  to-blue-600 py-10 lg:py-16 text-white -skew-y-12">
+       
           <div className="skew-y-12 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly ">
             <div className="flexOne flex flex-col justify-center items-center lg:justify-start lg:items-start space-y-2">
               <span className="text-sm lg:text-lg font-bold">
-                NEW POSSIBILITIES
+                POINT OF VIEW
               </span>
               <span className="text-3xl lg:text-5xl font-extrabold pb-4">
-                Features
+                Review
               </span>
               <hr className="h-1 w-12  bg-white" />
             </div>
@@ -204,7 +208,8 @@ const Explore = () => {
 
 
         {/* #PLans */}
-        <div className="bg-gradient-to-r from-pink-700  to-blue-600 py-10 lg:py-16 text-white -skew-y-12">
+        <div className="bg-gradient-to-r from-pink-500  to-blue-600 py-10 lg:py-32 text-white -skew-y-12">
+        <a className="anchor" id="pricing" />
           <div className="skew-y-12 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly ">
             <div className="flexOne flex flex-col justify-center items-center lg:justify-start lg:items-start space-y-2">
               <span className="text-sm lg:text-lg font-bold">
@@ -230,19 +235,117 @@ const Explore = () => {
 
           </div>
 
-          <div className="skew-y-12 grid grid-cols-1 lg:grid-cols-3 gap-5 mx-5 lg:mx-20 border-2 border-gray-300 rounded-xl">
-              <div className="bg-red-600 rounded-xl p-5 flex flex-col justify-center items-center ">
-                <h3 className="text-3xl">PERSONAL</h3>
-                <span className="text-3xl">12 Dollar</span>
+          <div className="skew-y-12 grid grid-cols-1 lg:grid-cols-3 gap-5 mx-5 lg:mx-20 border-2 border-gray-300 border-opacity-30 rounded-xl my-10">
+              <div className="bg-transparent rounded-xl p-5 flex flex-col justify-center items-center space-y-6 ">
+                <h3 className="text-2xl font-extrabold">PERSONAL</h3>
+                <span className="text-3xl font-bold">₹24 K / month</span>
                 <div className="flex flex-col justify-center items-center">
-                  <div className="flex flex-col justify-start items-start">
-                    <div className="flex flex-row justify-start items-center">
-                      <span><AiOutlineClose/></span>
+                  <div className="flex flex-col justify-start items-start space-y-2">
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineCheck/></span>
                       <span>eCommerce Widgets</span>
+                     
                     </div>
                     <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineClose/></span>
+                      <span>Product Updates</span>
+                    </div>
+                      <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineClose/></span>
+                      <span>Future Plugins</span>
+                    </div>
+                      <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineClose/></span>
+                      <span>Premium Support</span>
+                    </div>
+
+
+
+                    
+                   
                   </div>
                 </div>
+                <button className="border-2 border-white rounded-3xl text-white bg-transparent hover:text-blue-600 hover:bg-white px-4 py-2">GET STARTED</button>
+              </div>
+              <div className="bg-gradient-to-br from-pink-500 to-blue-600 scale-105  lg:scale-110 rounded-xl p-5 flex flex-col justify-center items-center space-y-6 ">
+                <h3 className="text-2xl font-extrabold">ENTERPRISE</h3>
+                <span className="text-3xl font-bold">₹44 K / month</span>
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex flex-col justify-start items-start space-y-2">
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineCheck/></span>
+                      <span>eCommerce Widgets</span>
+                     
+                    </div>
+                    <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineCheck/></span>
+                      <span>Product Updates</span>
+                    </div>
+                      <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineCheck/></span>
+                      <span>Future Plugins</span>
+                    </div>
+                      <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineCheck/></span>
+                      <span>Premium Support</span>
+                    </div>
+
+
+
+                    
+                   
+                  </div>
+                </div>
+                <button className="border-2 border-white rounded-3xl text-white bg-transparent hover:text-blue-600 hover:bg-white px-4 py-2">GET STARTED</button>
+              </div>
+              <div className="bg-transparent rounded-xl p-5 flex flex-col justify-center items-center space-y-6 ">
+                <h3 className="text-2xl font-extrabold">BUSINESS</h3>
+                <span className="text-3xl font-bold">₹75 K / month</span>
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex flex-col justify-start items-start space-y-2">
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineCheck/></span>
+                      <span>eCommerce Widgets</span>
+                     
+                    </div>
+                    <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineCheck/></span>
+                      <span>Product Updates</span>
+                    </div>
+                      <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineClose/></span>
+                      <span>Future Plugins</span>
+                    </div>
+                      <hr className="h-1 w-44"/>
+
+                    <div className="flex flex-row justify-start items-center space-x-2">
+                      <span><AiOutlineClose/></span>
+                      <span>Premium Support</span>
+                    </div>
+
+
+
+                    
+                   
+                  </div>
+                </div>
+                <button className="border-2 border-white rounded-3xl text-white bg-transparent hover:text-blue-600 hover:bg-white px-4 py-2">GET STARTED</button>
               </div>
           </div>
         </div>
@@ -253,31 +356,10 @@ const Explore = () => {
 
       </div>
 
-      <div className="newOne bg-blue-600 h-96 overflow-hidden ">
-        <div className="content -skew-y-12 p-16">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
-          excepturi? Temporibus nam suscipit officia ea consectetur modi, ipsum
-          fugiat ipsa reprehenderit dolorem maiores, nobis ipsam consequatur
-          animi voluptatem. Incidunt illo vel ut optio dolorem ad, sequi,
-          reprehenderit nobis aliquam numquam natus magni laborum quibusdam
-          corporis consequatur cupiditate officia dolores quas ipsum ipsam
-          possimus consequuntur molestias! Ratione recusandae id optio voluptate
-          laudantium iusto vel temporibus quasi in, adipisci architecto
-          asperiores eligendi aut dolorem nobis ipsum pariatur nisi obcaecati ad
-          ex voluptates accusamus quos. Eum, enim obcaecati, ducimus blanditiis
-          eius expedita sint corporis quos assumenda numquam similique ut
-          repudiandae iure adipisci vel quis pariatur commodi aperiam voluptas
-          eaque nesciunt. Culpa vel iste doloremque dolorum tenetur expedita rem
-          officia eaque libero eius placeat mollitia, atque fuga soluta minima
-          ratione numquam assumenda. Expedita cupiditate cum consectetur est
-          omnis tenetur repellendus nostrum autem ducimus, quae facilis sed
-          nulla eligendi illum. Repellat vero quibusdam mollitia, rerum rem
-          voluptatem dolorem est accusamus nulla quia nam velit sed at odit
-          consequatur totam dignissimos harum distinctio quo reprehenderit
-          excepturi. Nobis sed cum eveniet sint nisi labore ea cupiditate
-          tempora fugiat animi consectetur, quae nemo eligendi neque obcaecati
-          natus, atque repellendus quaerat minus vero alias beatae maxime
-          voluptatem. Harum, omnis!
+      <div className="newOne bg-blue-600 overflow-hidden text-white ">
+        <div className="content -skew-y-12 py-10 lg:py-28 flex flex-col justify-center items-center ">
+              <span className="text-5xl lg:text-9xl font-extrabold bg-gradient-to-br from-white to bg-fuchsia-500 bg-clip-text text-transparent">LET&#39;S MAKE</span>
+              <span className="text-5xl lg:text-9xl font-extrabold">SOMETHING BIG</span>
         </div>
       </div>
     </>
