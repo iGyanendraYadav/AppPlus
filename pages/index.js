@@ -1,12 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { AiFillApple, AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
+
+import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-b from-pink-600 to-fuchsia-700 ">
+  <>
+  
       <a className="anchor" id="home" />
+    <div className="bg-gradient-to-b from-pink-600 to-fuchsia-700 ">
     <div className="container mx-auto flex flex-col justify-center items-center text-white py-20">
       <span className="text-sm lg:text-lg uppercase font-bold pt-5 lg:pt-10">
         Explore The Future
@@ -38,5 +39,6 @@ export default function Home() {
       </div>
     </div>
   </div>
+  </>
   )
 }
