@@ -44,8 +44,9 @@ const Explore = () => {
           <Image src="/one.png" width={883} height={498} alt="one" />
         </div>
     
-        <div className="digonalBox text-white overflow-hidden bg-gradient-to-tr from-blue-600 via-fuchsia-500 to-blue-600 -skew-y-12">
-        <a className="anchor" id="about" />
+    {/* About The App */}
+        <div className="digonalBox text-white overflow-hidden bg-gradient-to-tr from-blue-600 via-fuchsia-500 to-blue-600 -skew-y-12 py-5">
+      
           <div className="content p-10 lg:p-36 skew-y-12">
             <div className="flex flex-col lg:flex-row justify-center items-center ">
               <div className="flexOne w-auto lg:w-1/2">
@@ -67,7 +68,7 @@ const Explore = () => {
                 </span>
 
                 <Image
-                  className="rounded-xl shadow-lg"
+                  className="rounded-xl shadow-lg pt-5"
                   src="/three.jpg"
                   width={570}
                   height={650}
@@ -78,6 +79,8 @@ const Explore = () => {
           </div>
         </div>
 
+
+{/* Features */}
       
         <div className="digonalBox2 text-white overflow-hidden bg-pink-700 -skew-y-12 pt-10 pb-10 lg:pt-20 lg:pb-10">
         <a className="anchor" id="features" />
@@ -109,8 +112,10 @@ const Explore = () => {
           </div>
         </div>
 
+        {/* The Better Way */}
+
         <div className="digonalBox3 text-white overflow-hidden bg-gradient-to-tr from-lime-500 to-pink-600 -skew-y-12 pt-10 pb-10 lg:pt-10 lg:pb-10">
-        <a className="anchor" id="review" />
+        
           <div className="content3 p-10 lg:p-36 skew-y-12">
             <div className="flexTwo w-auto lg:w-1/2 flex flex-col justify-start items-start space-y-3 lg:space-y-5">
               <span className="text-sm lg:text-lg font-bold">
@@ -153,7 +158,7 @@ const Explore = () => {
 
 
         {/* #PLans */}
-        <a className="anchor" id="pricing" />
+    
         <div className="bg-gradient-to-r from-pink-500  to-blue-600 pt-10 pb-10 lg:pt-0 lg:pb-10 text-white -skew-y-12">
   
           <div className="skew-y-12 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly ">

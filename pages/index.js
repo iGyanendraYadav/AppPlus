@@ -6,9 +6,9 @@ export default function Home() {
   return (
   <>
   
-      <a className="anchor" id="home" />
+     
     <div className="bg-gradient-to-b from-pink-600 to-fuchsia-700 ">
-    <div className="container mx-auto flex flex-col justify-center items-center text-white py-20">
+    <div className="container mx-auto flex flex-col justify-center items-center text-white py-10">
       <span className="text-sm lg:text-lg uppercase font-bold pt-5 lg:pt-10">
         Explore The Future
       </span>
@@ -34,7 +34,7 @@ export default function Home() {
           type="button"
         >
           {" "}
-          <FaGooglePlay /> <span>App Store</span>{" "}
+          <FaGooglePlay /> <span>Play Store</span>{" "}
         </button>
       </div>
     </div>
